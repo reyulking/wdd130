@@ -86,6 +86,13 @@ main-nav ul li a {
     padding: 20px;
 }
 
+.adventure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
 /* Style for footer social media links */
 footer {
     background-color: var(--primary-color);
