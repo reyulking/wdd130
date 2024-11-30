@@ -93,7 +93,40 @@ main-nav ul li a {
     padding: 20px;
 }
 
-/* Style for footer social media links */
+.adventure figure{
+    margin: 10px;
+    text-align: center;
+}
+
+.adventure figure img {
+    width:200px;
+    height: auto;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer .sociallinks {
+    display: flex;
+    gap: 10px
+}
+
+footer a img {
+    width: 30px;
+}
+
+/*
 footer {
     background-color: var(--primary-color);
     text-align: center;
@@ -138,10 +171,10 @@ p {
     display: inline-block;
 }
 
-/* Limit the page width */
+
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-
+    */
