@@ -15,11 +15,16 @@ body {
 }
 
 .header-grid {
-    display:grid;
+/*    display:grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     padding: 10px 20px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color);*/
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
 }
 
 .logo-box img {
