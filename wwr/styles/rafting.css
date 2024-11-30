@@ -8,11 +8,43 @@
 
 body {
     font-family: 'Kanit', serif;
-    background-color: var(--background-color);
+    background-color: #f4f4f4;
     color: var(--text-color);
     margin: 0;
     padding: 0;
 }
+
+.header-grid {
+    display:grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+}
+
+.logo-box img {
+    max-height: 50px;
+}
+
+.main-nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+main-nav ul li a {
+    color: white;
+    text-decoration; none;
+    font-size: 1.2rem;
+}
+
+
 
 h1, h2 {
     color: var(--primary-color);
@@ -42,6 +74,7 @@ p {
 
 .hero {
     position: relative;
+    text-align: center;
 }
 
 .hero img {
@@ -54,8 +87,8 @@ p {
     position: absolute;
     top: 20px;
     left: 20px;
-    color: var(--secondary-color);
-    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
     border-radius: 5px;
 }
@@ -95,4 +128,8 @@ footer a img {
     width: 40px;
     height: auto;
     margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
 }
