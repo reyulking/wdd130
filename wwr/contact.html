@@ -58,7 +58,7 @@
     <!-- Employee 2 -->
     <figure>
         <img src="images/employee2.jpg" alt="David Doe - Customer Support" width="200">
-        <figcaption>Jane Doe - Customer Support</figcaption>
+        <figcaption>David Doe - Customer Support</figcaption>
     </figure>
 
     <!-- Employee 3 -->
@@ -67,7 +67,45 @@
         <figcaption>Michael Lee - Marketing Specialist</figcaption>
     </figure>
 </section>
+<section class="contact-form">
+    <h2>Contact Us</h2>
 
+    <form action="/submit" method="POST">
+        <!-- Name Input -->
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email Input -->
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Purpose of the Message -->
+        <label>Purpose of Your Message:</label>
+        <div>
+            <label for="general-inquiry">
+                <input type="radio" id="general-inquiry" name="message-purpose" value="General Inquiry"> General Inquiry
+            </label>
+            <label for="reservation-question">
+                <input type="radio" id="reservation-question" name="message-purpose" value="Reservation Question"> Reservation Question
+            </label>
+            <label for="website-suggestion">
+                <input type="radio" id="website-suggestion" name="message-purpose" value="Website Suggestion"> Website Suggestion
+            </label>
+        </div>
+
+        <!-- Message Input -->
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Newsletter Subscription -->
+        <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
+        </label>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-button">Submit Your Message</button>
+    </form>
+</section>
 
 </main>
 
