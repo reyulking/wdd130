@@ -149,3 +149,12 @@ main {
     width: 100%;
     height: 450px;
 }
+
+.wireframe-link {
+    color: white;
+    text-decoration: none; /* Optional: removes underline */
+}
+
+.wireframe-link:hover {
+    text-decoration: underlines; /*Optional: adds underline on hover for accessibility */
+}
