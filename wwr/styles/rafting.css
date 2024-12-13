@@ -4,6 +4,7 @@
     --accent1-color: #5DA399;
     --accent2-color: #42858C;
     --text-color: #333; /* Dark gray */
+    --background-color: #f9f9f9;
 }
 
 body {
@@ -14,12 +15,25 @@ body {
     padding: 0;
 }
 
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+
+p{
+    line-height: 1.6;
+}
+
 .header-grid {
     display:grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     padding: 10px 20px;
     background-color: var(--primary-color);
+}
+
+header img {
+    height: 50px;
 }
 
 .logo-box img {
@@ -67,11 +81,12 @@ nav {
 
 .hero h1 {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
     border-radius: 5px;
 }
 
@@ -157,4 +172,125 @@ main {
 
 .wireframe-link:hover {
     text-decoration: underlines; /*Optional: adds underline on hover for accessibility */
+}
+
+.call-to-action {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.call-to-action .cta-button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.call-to-action .cta-button:hover {
+    background-color: var(--accent1-color);
+}
+
+.newsletter {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.newsletter label {
+    display: block;
+    margin: 10p 0 5px;
+    font-weight: bold;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius:5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent2-color);
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.home-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.trips article{
+    text-align: center;
+}
+
+.trips article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.trip-summary {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.trip-summary th, .trip-summary td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.trip-summary th {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.trip-summary td {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
 }
